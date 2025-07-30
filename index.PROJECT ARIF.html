@@ -1,0 +1,162 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffb6c1, #ffe4e1);
+      overflow: hidden;
+      height: 100vh;
+      position: relative;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 2.5em;
+      color: #d6336c;
+    }
+    .content {
+      text-align: center;
+      color: #444;
+      margin-top: 20px;
+      padding: 20px;
+    }
+    .content p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .photo, .video {
+      margin: 20px auto;
+      max-width: 80%;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+    }
+    audio {
+      display: block;
+      margin: 20px auto;
+    }
+    /* Jatuhan love */
+    .heart {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      animation: fall 5s linear infinite;
+      background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center;
+      background-size: cover;
+    }
+    @keyframes fall {
+      0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+=======
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff5f6d, #ffc371, #47caff, #9d50bb);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      overflow: hidden;
+      height: 100vh;
+      position: relative;
+      color: #222;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 3em;
+      background: linear-gradient(45deg, #ff416c, #ff4b2b, #1fa2ff, #12d8fa, #a6ffcb);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: rainbowText 5s linear infinite;
+      font-weight: 900;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    }
+    @keyframes rainbowText {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    .content {
+      text-align: center;
+      color: #222;
+      margin-top: 20px;
+      padding: 20px;
+      font-size: 1.3em;
+      text-shadow: 1px 1px 2px #fff;
+      animation: fadeInColor 4s ease forwards;
+    }
+    @keyframes fadeInColor {
+      0% {color: #aaa;}
+      100% {color: #222;}
+    }
+    .content p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .photo, .video {
+      margin: 20px auto;
+      max-width: 80%;
+      border-radius: 20px;
+      box-shadow: 0 0 15px 5px rgba(255, 105, 180, 0.7);
+      border: 5px solid transparent;
+      background-image: linear-gradient(white, white), 
+                        linear-gradient(45deg, #ff416c, #ff4b2b, #1fa2ff, #12d8fa, #a6ffcb);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      transition: box-shadow 0.5s ease, border-color 0.5s ease;
+    }
+    .photo:hover, .video:hover {
+      box-shadow: 0 0 25px 8px rgba(255, 105, 180, 1);
+      border-color: #ff4b2b;
+    }
+    audio {
+      display: block;
+      margin: 20px auto;
+      outline: none;
+      border-radius: 10px;
+      box-shadow: 0 0 15px 5px #12d8fa;
+      transition: box-shadow 0.3s ease;
+    }
+    audio:hover {
+      box-shadow: 0 0 25px 8px #ff416c;
+    }
+    /* Jatuhan love */
+    .heart {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      animation: fall 5s linear infinite;
+      background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center;
+      background-size: cover;
+      filter: drop-shadow(0 0 2px rgba(0,0,0,0.3));
+    }
+    @keyframes fall {
+      0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
